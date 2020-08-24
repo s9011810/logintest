@@ -1,0 +1,13 @@
+
+<?php 
+	$server="120.110.115.152"; 
+	$db_username="dluser"; 
+ 	$db_password="dluser@515"; 
+	$con = new mysql($server,$db_username,$db_password); 
+	if(!$con){ 
+		die("can't connect".mysql_error());
+	}
+	mysql_select_db('logintest',$con );
+	echo "123";
+?>
+<!Document>
